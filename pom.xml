@@ -13,6 +13,7 @@
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
         <maven.slf4j.dependency>1.7.35</maven.slf4j.dependency>
+        <maven.cucumber.dependency>7.2.3</maven.cucumber.dependency>
         <maven.suite>suite/allTests.xml</maven.suite>
     </properties>
 
@@ -70,6 +71,16 @@
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-simple</artifactId>
             <version>${maven.slf4j.dependency}</version>
+        </dependency>
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-java</artifactId>
+            <version>${maven.cucumber.dependency}</version>
+        </dependency>
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-testng</artifactId>
+            <version>${maven.cucumber.dependency}</version>
         </dependency>
 
     </dependencies>
