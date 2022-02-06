@@ -12,6 +12,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
+        <maven.slf4j.dependency>1.7.35</maven.slf4j.dependency>
     </properties>
 
     <build>
@@ -57,12 +58,12 @@
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-api</artifactId>
-            <version>1.7.35</version>
+            <version>${maven.slf4j.dependency}</version>
         </dependency>
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-simple</artifactId>
-            <version>1.7.35</version>
+            <version>${maven.slf4j.dependency}</version>
         </dependency>
 
     </dependencies>
