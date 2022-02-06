@@ -53,5 +53,17 @@
             <artifactId>testng</artifactId>
             <version>7.5</version>
         </dependency>
+        <!-- slf4j - is essential for TestNG. Without it, we've got a warning at the beginning of tests -->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>1.7.35</version>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-simple</artifactId>
+            <version>1.7.35</version>
+        </dependency>
+
     </dependencies>
 </project>
