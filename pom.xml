@@ -71,7 +71,7 @@
                             <goal>write-project-properties</goal>
                         </goals>
                         <configuration>
-                            <outputFile>src/main/resources/properties/app.properties</outputFile>
+                            <outputFile>src/main/resources/app.properties</outputFile>
                         </configuration>
                     </execution>
                 </executions>

@@ -22,7 +22,7 @@ public class AppProperties {
     }
 
     private static URL getThePropertiesUrl() {
-        String propertiesFileName = "properties/app.properties";
+        String propertiesFileName = "app.properties";
         URL propertiesUrl = AppProperties.class.getClassLoader().getResource(propertiesFileName);
         if (propertiesUrl == null) {
             throw new NullPointerException("AppProperties: File '" + propertiesFileName + "' doesn't exist");
