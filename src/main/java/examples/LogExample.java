@@ -1,8 +1,10 @@
+package examples;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-public class Examples {
-    private static final Logger logger = LogManager.getLogger(Examples.class);
+public class LogExample {
+    private static final Logger logger = LogManager.getLogger(LogExample.class);
 
     public static void main(String[] args) {
         logger.debug("Some debug log!");
