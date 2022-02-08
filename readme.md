@@ -16,3 +16,7 @@ If you don't want to use it, you should have an external appium server.
 Logs are implemented using the log4J library.
 Log results are saved in the _target/logs/app.logs_ file.
 Waveforms from new logs are added to the existing file until it is deleted or it exceeds 10MB.
+
+## Project translations
+The project translations are handled by the default ResourceBundle library.
+Default MassegesBundle are set for England (EN). This setting you can change in pom.xml.
