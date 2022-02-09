@@ -2,10 +2,12 @@ package examples;
 
 import utils.CmdExecutor;
 
+import static utils.CmdExecutor.getResult;
+
 public class CmdExecutorExample {
 
     public static void main(String[] args) {
-        String res = CmdExecutor.execCmdWithGetResult("adb devices");
-        System.out.println(res);
+        Process res = CmdExecutor.execCmd("adb is");
+        System.out.println(getResult(res));
     }
 }
