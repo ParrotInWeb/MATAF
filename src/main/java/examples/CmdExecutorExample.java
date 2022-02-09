@@ -1,6 +1,6 @@
 package examples;
 
-import utils.cmd.CmdExecutor;
+import utils.CmdExecutor;
 
 public class CmdExecutorExample {
 
