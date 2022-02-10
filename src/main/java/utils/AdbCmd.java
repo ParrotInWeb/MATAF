@@ -15,9 +15,7 @@ public class AdbCmd {
     private static final Logger logger = LogManager.getLogger(AdbCmd.class);
 
     public static void connect() {
-        String log = "Wait until device " + appiumDevice + " is connected";
-        logger.info(log);
-        await(log)
+        await("Wait until device " + appiumDevice + " is connected")
                 .atMost(60, TimeUnit.SECONDS)
                 .pollInterval(5, TimeUnit.SECONDS)
                 .until(() -> {
@@ -30,15 +28,15 @@ public class AdbCmd {
                 });
     }
 
-    public static void disconnect() {
-        execCmd("adb disconnect");
-    }
-
-    public static String connectToDevice() {
+    private static String connectToDevice() {
         if (appiumDevice.contains(".")) {
             execCmd("adb connect " + appiumDevice);
         }
         return getResult(execCmd("adb devices"))
                 .replaceAll("[ \t\n]", "");
+    }
+
+    public static void disconnect() {
+        execCmd("adb disconnect " + appiumDevice);
     }
 }
