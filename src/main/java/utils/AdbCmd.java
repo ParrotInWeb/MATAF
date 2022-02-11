@@ -11,7 +11,7 @@ import static utils.CmdExecutor.getResult;
 
 public class AdbCmd {
 
-    private static final String appiumDevice = AppProperties.getProperty("appium.device");
+    private static final String appiumDevice = AppProperties.getProperty("appium.device.name");
     private static final Logger logger = LogManager.getLogger(AdbCmd.class);
 
     public static void connect() {

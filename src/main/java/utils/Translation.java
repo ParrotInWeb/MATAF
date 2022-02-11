@@ -12,8 +12,8 @@ public class Translation {
     public static String getTranslation(String key) {
         return ResourceBundle.getBundle(
                 "MessagesBundle",
-                new Locale(AppProperties.getProperty("project.languageCode"),
-                        AppProperties.getProperty("project.countryCode")))
+                new Locale(AppProperties.getProperty("app.languageCode"),
+                        AppProperties.getProperty("app.countryCode")))
                 .getString(key)
                 .trim();
     }

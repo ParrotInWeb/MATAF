@@ -9,9 +9,12 @@
     <version>0.1</version>
 
     <properties>
-        <appium.device>A798XXBM9B284486</appium.device>
-        <project.languageCode>en</project.languageCode>
-        <project.countryCode>EN</project.countryCode>
+        <appium.device.name>A798XXBM9B284486</appium.device.name>
+        <appium.device.platformVersion>9</appium.device.platformVersion>
+        <app.package></app.package>
+        <app.activity></app.activity>
+        <app.languageCode>en</app.languageCode>
+        <app.countryCode>EN</app.countryCode>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
