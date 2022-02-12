@@ -23,7 +23,6 @@
         <!-- appium -->
         <appium.appiumPort>4723</appium.appiumPort>
         <appium.bootstrapPort>2250</appium.bootstrapPort>
-        <appium.enabled>true</appium.enabled>
         <appium.log-level>warn</appium.log-level>
         <appium.path.nodeJs>C:\Programy\nodejs\node.exe</appium.path.nodeJs>
         <appium.path.mainJs>C:\Users\socia\node_modules\appium\build\lib\main.js</appium.path.mainJs>
