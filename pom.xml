@@ -11,8 +11,8 @@
     <properties>
         <appium.device.name>7EX0218308000715</appium.device.name>
         <appium.device.platformVersion>9.1</appium.device.platformVersion>
-        <app.package>com.finalwire.aida64</app.package>
-        <app.activity>HHMainActivity</app.activity>
+        <app.package>it.feio.android.omninotes</app.package>
+        <app.activity>it.feio.android.omninotes.MainActivity</app.activity>
         <app.languageCode>en</app.languageCode>
         <app.countryCode>EN</app.countryCode>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
