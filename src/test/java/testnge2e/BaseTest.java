@@ -8,7 +8,6 @@ import utils.Android.AndroidDriverConnector;
 public class BaseTest {
     protected AppiumDriver androidDriver;
 
-
     @BeforeSuite
     public void beforeSuite() {
         AndroidDriverConnector.connect();
