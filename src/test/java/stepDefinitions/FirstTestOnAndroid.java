@@ -4,9 +4,9 @@ import cucumberRunner.Runner;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import org.testng.Assert;
-import pages.MainPage;
+import pages.androidPage.MainPage;
 
-import static utils.Android.AndroidDriverConnector.driver;
+import static utils.DriverConnector.driver;
 
 public class FirstTestOnAndroid extends Runner{
 

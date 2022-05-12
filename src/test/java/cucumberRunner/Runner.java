@@ -4,7 +4,8 @@ import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
-import utils.Android.AndroidDriverConnector;
+import utils.AppProperties;
+import utils.DriverConnector;
 
 @CucumberOptions(
         features = "src/test/resources/features/FirstTestOnAndroid.feature",
@@ -15,11 +16,11 @@ public class Runner extends AbstractTestNGCucumberTests {
 
     @BeforeSuite(alwaysRun = true)
     public void beforeSuite() {
-        AndroidDriverConnector.connect();
+        DriverConnector.connect(AppProperties.getProperty("appium.device.platform_name"));
     }
 
     @AfterSuite(alwaysRun = true)
     public void afterSuite() {
-        AndroidDriverConnector.disconnect();
+        DriverConnector.disconnect();
     }
 }

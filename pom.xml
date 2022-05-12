@@ -9,17 +9,21 @@
     <version>0.1</version>
 
     <properties>
-        <appium.device.name>7EX0218308000715</appium.device.name>
-        <appium.device.platformVersion>9.1</appium.device.platformVersion>
-        <app.package>it.feio.android.omninotes</app.package>
-        <app.activity>it.feio.android.omninotes.MainActivity</app.activity>
+        <appium.device.platform_name>Android</appium.device.platform_name>
+        <appium.device.platform_version>9</appium.device.platform_version>
+        <appium.device.device_name>A798XXBM9B284486</appium.device.device_name>
+        <appium.device.device_udid>A798XXBM9B284486</appium.device.device_udid>
+        <app.app_activity>it.feio.android.omninotes.MainActivity</app.app_activity>
+        <app.app_package>it.feio.android.omninotes</app.app_package>
+        <ios.bundle_id>uzupelnij</ios.bundle_id>
         <app.languageCode>en</app.languageCode>
         <app.countryCode>EN</app.countryCode>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
         <maven.slf4j.dependency>1.7.35</maven.slf4j.dependency>
         <maven.cucumber.dependency>7.2.3</maven.cucumber.dependency>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <!-- appium -->
         <appium.appiumPort>4723</appium.appiumPort>
         <appium.bootstrapPort>2250</appium.bootstrapPort>

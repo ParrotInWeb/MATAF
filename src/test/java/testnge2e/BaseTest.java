@@ -1,21 +1,24 @@
 package testnge2e;
 
 import io.appium.java_client.AppiumDriver;
+import org.openqa.selenium.WebElement;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
-import utils.Android.AndroidDriverConnector;
+import utils.DriverConnector;
+
+import static utils.AppProperties.getProperty;
 
 public class BaseTest {
-    protected AppiumDriver androidDriver;
+    protected AppiumDriver<WebElement> driver;
 
     @BeforeSuite
     public void beforeSuite() {
-        AndroidDriverConnector.connect();
-        androidDriver = AndroidDriverConnector.driver;
+        DriverConnector.connect(getProperty("appium.device.platform_name"));
+        driver = DriverConnector.driver;
     }
 
     @AfterSuite
     public void afterSuite() {
-        AndroidDriverConnector.disconnect();
+        DriverConnector.disconnect();
     }
 }

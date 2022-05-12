@@ -1,14 +1,15 @@
-package testnge2e;
+package testnge2e.androidTest;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import pages.MainPage;
+import pages.androidPage.MainPage;
+import testnge2e.BaseTest;
 
 public class FirstTest extends BaseTest {
 
     @Test
     public void firstTest() {
-        MainPage mainPage = new MainPage(androidDriver);
+        MainPage mainPage = new MainPage(driver);
         Assert.assertEquals(mainPage.getNameOfHeader(), "Notes");
     }
 }
